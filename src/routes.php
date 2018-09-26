@@ -202,7 +202,8 @@ $app->get('/parent/{studentId}/get-data', function(Request $request, Response $r
             }
         }
 
-
+//YU0T5qjNosgS
+        //YU0T5qjNosgS
 
     } catch (\PDOException $e){
         $this->logger->info("Cannot get requested user Information from DB " . $e);

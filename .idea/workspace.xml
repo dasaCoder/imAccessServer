@@ -27,8 +27,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="81" column="34" lean-forward="false" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
+            <state relative-caret-position="504">
+              <caret line="205" column="22" lean-forward="false" selection-start-line="205" selection-start-column="22" selection-end-line="205" selection-end-column="22" />
               <folding>
                 <element signature="e#7#29#0#PHP" expanded="true" />
                 <element signature="e#707#1867#1#PHP" expanded="false" />
@@ -38,13 +38,13 @@
                 <element signature="e#3637#4352#0#PHP" expanded="false" />
                 <element signature="e#3975#4177#0#PHP" expanded="false" />
                 <element signature="e#4091#4167#0#PHP" expanded="false" />
-                <marker date="1537953302158" expanded="true" signature="1182:1265" ph="SELECT * FRO... users" />
-                <marker date="1537953302158" expanded="true" signature="1182:1282" ph="SELECT id, f... visitors" />
-                <marker date="1537953302158" expanded="true" signature="2034:2271" ph="SELECT (SELE... visitor_building" />
-                <marker date="1537953302158" expanded="true" signature="2042:2127" ph="SELECT bb.bl... building_blocks" />
-                <marker date="1537953302158" expanded="true" signature="3539:3629" ph="SELECT id,us... users" />
-                <marker date="1537953302158" expanded="true" signature="4567:4846" ph="SELECT (SELE... stu_attendance" />
-                <marker date="1537953302158" expanded="true" signature="4575:4643" ph="SELECT subje... subjects" />
+                <marker date="1537954846454" expanded="true" signature="1182:1265" ph="SELECT * FRO... users" />
+                <marker date="1537954846454" expanded="true" signature="1182:1282" ph="SELECT id, f... visitors" />
+                <marker date="1537954846454" expanded="true" signature="2034:2271" ph="SELECT (SELE... visitor_building" />
+                <marker date="1537954846454" expanded="true" signature="2042:2127" ph="SELECT bb.bl... building_blocks" />
+                <marker date="1537954846454" expanded="true" signature="3539:3629" ph="SELECT id,us... users" />
+                <marker date="1537954846454" expanded="true" signature="4567:4846" ph="SELECT (SELE... stu_attendance" />
+                <marker date="1537954846454" expanded="true" signature="4575:4643" ph="SELECT subje... subjects" />
               </folding>
             </state>
           </provider>
@@ -244,12 +244,12 @@
       <workItem from="1537854299745" duration="3215000" />
       <workItem from="1537857528205" duration="9852000" />
       <workItem from="1537931257361" duration="115000" />
-      <workItem from="1537944945624" duration="3719000" />
+      <workItem from="1537944945624" duration="5423000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16901000" />
+    <option name="totallyTimeSpent" value="18605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -364,13 +364,13 @@
             <element signature="e#3637#4352#0#PHP" expanded="false" />
             <element signature="e#3975#4177#0#PHP" expanded="false" />
             <element signature="e#4091#4167#0#PHP" expanded="false" />
-            <marker date="1537953302158" expanded="true" signature="1182:1265" ph="SELECT * FRO... users" />
-            <marker date="1537953302158" expanded="true" signature="1182:1282" ph="SELECT id, f... visitors" />
-            <marker date="1537953302158" expanded="true" signature="2034:2271" ph="SELECT (SELE... visitor_building" />
-            <marker date="1537953302158" expanded="true" signature="2042:2127" ph="SELECT bb.bl... building_blocks" />
-            <marker date="1537953302158" expanded="true" signature="3539:3629" ph="SELECT id,us... users" />
-            <marker date="1537953302158" expanded="true" signature="4567:4846" ph="SELECT (SELE... stu_attendance" />
-            <marker date="1537953302158" expanded="true" signature="4575:4643" ph="SELECT subje... subjects" />
+            <marker date="1537954846454" expanded="true" signature="1182:1265" ph="SELECT * FRO... users" />
+            <marker date="1537954846454" expanded="true" signature="1182:1282" ph="SELECT id, f... visitors" />
+            <marker date="1537954846454" expanded="true" signature="2034:2271" ph="SELECT (SELE... visitor_building" />
+            <marker date="1537954846454" expanded="true" signature="2042:2127" ph="SELECT bb.bl... building_blocks" />
+            <marker date="1537954846454" expanded="true" signature="3539:3629" ph="SELECT id,us... users" />
+            <marker date="1537954846454" expanded="true" signature="4567:4846" ph="SELECT (SELE... stu_attendance" />
+            <marker date="1537954846454" expanded="true" signature="4575:4643" ph="SELECT subje... subjects" />
           </folding>
         </state>
       </provider>
@@ -452,13 +452,13 @@
             <element signature="e#3637#4352#0#PHP" expanded="false" />
             <element signature="e#3975#4177#0#PHP" expanded="false" />
             <element signature="e#4091#4167#0#PHP" expanded="false" />
-            <marker date="1537953302158" expanded="true" signature="1182:1265" ph="SELECT * FRO... users" />
-            <marker date="1537953302158" expanded="true" signature="1182:1282" ph="SELECT id, f... visitors" />
-            <marker date="1537953302158" expanded="true" signature="2034:2271" ph="SELECT (SELE... visitor_building" />
-            <marker date="1537953302158" expanded="true" signature="2042:2127" ph="SELECT bb.bl... building_blocks" />
-            <marker date="1537953302158" expanded="true" signature="3539:3629" ph="SELECT id,us... users" />
-            <marker date="1537953302158" expanded="true" signature="4567:4846" ph="SELECT (SELE... stu_attendance" />
-            <marker date="1537953302158" expanded="true" signature="4575:4643" ph="SELECT subje... subjects" />
+            <marker date="1537954846454" expanded="true" signature="1182:1265" ph="SELECT * FRO... users" />
+            <marker date="1537954846454" expanded="true" signature="1182:1282" ph="SELECT id, f... visitors" />
+            <marker date="1537954846454" expanded="true" signature="2034:2271" ph="SELECT (SELE... visitor_building" />
+            <marker date="1537954846454" expanded="true" signature="2042:2127" ph="SELECT bb.bl... building_blocks" />
+            <marker date="1537954846454" expanded="true" signature="3539:3629" ph="SELECT id,us... users" />
+            <marker date="1537954846454" expanded="true" signature="4567:4846" ph="SELECT (SELE... stu_attendance" />
+            <marker date="1537954846454" expanded="true" signature="4575:4643" ph="SELECT subje... subjects" />
           </folding>
         </state>
       </provider>
@@ -484,13 +484,13 @@
             <element signature="e#3637#4352#0#PHP" expanded="false" />
             <element signature="e#3975#4177#0#PHP" expanded="false" />
             <element signature="e#4091#4167#0#PHP" expanded="false" />
-            <marker date="1537953302158" expanded="true" signature="1182:1265" ph="SELECT * FRO... users" />
-            <marker date="1537953302158" expanded="true" signature="1182:1282" ph="SELECT id, f... visitors" />
-            <marker date="1537953302158" expanded="true" signature="2034:2271" ph="SELECT (SELE... visitor_building" />
-            <marker date="1537953302158" expanded="true" signature="2042:2127" ph="SELECT bb.bl... building_blocks" />
-            <marker date="1537953302158" expanded="true" signature="3539:3629" ph="SELECT id,us... users" />
-            <marker date="1537953302158" expanded="true" signature="4567:4846" ph="SELECT (SELE... stu_attendance" />
-            <marker date="1537953302158" expanded="true" signature="4575:4643" ph="SELECT subje... subjects" />
+            <marker date="1537954846454" expanded="true" signature="1182:1265" ph="SELECT * FRO... users" />
+            <marker date="1537954846454" expanded="true" signature="1182:1282" ph="SELECT id, f... visitors" />
+            <marker date="1537954846454" expanded="true" signature="2034:2271" ph="SELECT (SELE... visitor_building" />
+            <marker date="1537954846454" expanded="true" signature="2042:2127" ph="SELECT bb.bl... building_blocks" />
+            <marker date="1537954846454" expanded="true" signature="3539:3629" ph="SELECT id,us... users" />
+            <marker date="1537954846454" expanded="true" signature="4567:4846" ph="SELECT (SELE... stu_attendance" />
+            <marker date="1537954846454" expanded="true" signature="4575:4643" ph="SELECT subje... subjects" />
           </folding>
         </state>
       </provider>
@@ -669,8 +669,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="81" column="34" lean-forward="false" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
+        <state relative-caret-position="504">
+          <caret line="205" column="22" lean-forward="false" selection-start-line="205" selection-start-column="22" selection-end-line="205" selection-end-column="22" />
           <folding>
             <element signature="e#7#29#0#PHP" expanded="true" />
             <element signature="e#707#1867#1#PHP" expanded="false" />
@@ -680,13 +680,13 @@
             <element signature="e#3637#4352#0#PHP" expanded="false" />
             <element signature="e#3975#4177#0#PHP" expanded="false" />
             <element signature="e#4091#4167#0#PHP" expanded="false" />
-            <marker date="1537953302158" expanded="true" signature="1182:1265" ph="SELECT * FRO... users" />
-            <marker date="1537953302158" expanded="true" signature="1182:1282" ph="SELECT id, f... visitors" />
-            <marker date="1537953302158" expanded="true" signature="2034:2271" ph="SELECT (SELE... visitor_building" />
-            <marker date="1537953302158" expanded="true" signature="2042:2127" ph="SELECT bb.bl... building_blocks" />
-            <marker date="1537953302158" expanded="true" signature="3539:3629" ph="SELECT id,us... users" />
-            <marker date="1537953302158" expanded="true" signature="4567:4846" ph="SELECT (SELE... stu_attendance" />
-            <marker date="1537953302158" expanded="true" signature="4575:4643" ph="SELECT subje... subjects" />
+            <marker date="1537954846454" expanded="true" signature="1182:1265" ph="SELECT * FRO... users" />
+            <marker date="1537954846454" expanded="true" signature="1182:1282" ph="SELECT id, f... visitors" />
+            <marker date="1537954846454" expanded="true" signature="2034:2271" ph="SELECT (SELE... visitor_building" />
+            <marker date="1537954846454" expanded="true" signature="2042:2127" ph="SELECT bb.bl... building_blocks" />
+            <marker date="1537954846454" expanded="true" signature="3539:3629" ph="SELECT id,us... users" />
+            <marker date="1537954846454" expanded="true" signature="4567:4846" ph="SELECT (SELE... stu_attendance" />
+            <marker date="1537954846454" expanded="true" signature="4575:4643" ph="SELECT subje... subjects" />
           </folding>
         </state>
       </provider>
