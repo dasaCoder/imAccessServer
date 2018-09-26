@@ -22,7 +22,7 @@ return [
             'host' => 'localhost',
             'user' => 'root',
             'pass' => '',
-            'dbname' => 'test_slim'
+            'dbname' => 'slim_test'
         ]
     ],
 ];

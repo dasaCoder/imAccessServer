@@ -88,31 +88,32 @@ $app->post('/parent/login', function(Request $request, Response $response, array
 {
     $data = $request->getParsedBody();
 
-    $userName = "";
+    $studentNo = "";
     $password = "";
 
     if(!$data)
     {
-        $response->write("Please enter valid credentials....");
+        return $response->withJson(0);
+
     }
-    if(array_key_exists("user_name",$data))
+    if(array_key_exists("student_no",$data))
     {
-        $userName = $data["user_name"];
+        $studentNo = $data["student_no"];
         $password = $data["password"];
 
     }
     else
     {
-        $response->write("User name or password cannot be null....");
+        return $response->withJson(0);
+
     }
 
-
-    $sql = "SELECT id,userName FROM `users` WHERE userName = :userName AND password = :password";
+    $sql = "SELECT id,first_name FROM `student` WHERE student_no = :studentNo AND password = :password";
 
     try{
         $stmt = $this->db->prepare($sql);
         $stmt->execute([
-            "userName" => $userName,
+            "studentNo" => $studentNo,
             "password" => $password
         ]);
 
@@ -120,17 +121,62 @@ $app->post('/parent/login', function(Request $request, Response $response, array
 
         if(!$result){
             $this->logger->info("paper does not exits");
-            return false;
+            return $response->withJson(0);
         }
         else{
-            return $response->withJson($result[0]) ;
+            if($result[0] == null){
+
+                return $response->withJson(0);
+            }
+            else{
+                return $response->withJson($result[0]) ;
+            }
         }
 
 
 
     } catch (\PDOException $e){
         $this->logger->info("Cannot get requested paper Information from DB " . $e);
-        return false;
+        return $response->withJson($result[0]) ;
     }
     //$response->write($data["body"]);
+});
+
+$app->get('/parent/{studentId}/get-data', function(Request $request, Response $response, array $args){
+    $studentId = $request->getAttribute("studentId");
+
+    $sql = "SELECT (SELECT subjects.code FROM subjects WHERE subjects.id = sr.subject_id) as subject, sr.start_time, sr.end_time, sr.date, sa.isAttended FROM stu_attendance as sa, subject_record as sr
+                WHERE sa.subject_rec_id = sr.id
+                and sa.stu_id = :studentId";
+
+    try{
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute([
+            "studentId" => $studentId,
+        ]);
+
+        $result = $stmt->fetchAll();
+
+        if(!$result){
+            $this->logger->info("user does not exits");
+            return $response->withJson(0);
+        }
+        else{
+            if($result[0] == null){
+
+                return $response->withJson(0);
+            }
+            else{
+                return $response->withJson($result) ;
+            }
+        }
+
+
+
+    } catch (\PDOException $e){
+        $this->logger->info("Cannot get requested user Information from DB " . $e);
+        return $response->withJson(false) ;
+    }
+
+    //return $response->withJson($userId);
 });
