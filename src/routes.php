@@ -23,6 +23,7 @@ $app->get('/test', function (Request $request, Response $response, array $args) 
     //return $this->renderer->render($response, 'index.phtml', $args);
 });
 
+//SELECT id, first_name FROM `visitors` WHERE first_name = 'xx' AND password = '123'
 $app->post('/visitor/login', function(Request $request, Response $response, array $args)
 {
     $data = $request->getParsedBody();
@@ -46,12 +47,12 @@ $app->post('/visitor/login', function(Request $request, Response $response, arra
     }
 
 
-    $sql = "SELECT id,userName FROM `users` WHERE userName = :userName AND password = :password";
+    $sql = "SELECT id, first_name FROM `visitors` WHERE first_name = :firstName AND password = :password LIMIT 1";
 
     try{
         $stmt = $this->db->prepare($sql);
         $stmt->execute([
-            "userName" => $userName,
+            "firstName" => $userName,
             "password" => $password
         ]);
 
@@ -75,11 +76,41 @@ $app->post('/visitor/login', function(Request $request, Response $response, arra
 });
 
 
-$app->get('/{userId}/get-data', function(Request $request, Response $response, array $args){
+$app->get('/visitor/{userId}/get-data', function(Request $request, Response $response, array $args){
     $userId = $request->getAttribute("userId");
 
+    $sql = "SELECT (SELECT bb.code FROM `building_blocks` as bb WHERE bb.id = `visitor_building`.block_id) as block, `visitor_building`.`is_allowed` 
+            FROM `visitor_building` 
+            WHERE `visitor_building`.`visitor_id` = :visitorId";
+
+        try{
+            $stmt = $this->db->prepare($sql);
+            $stmt->execute([
+                "visitorId" => $userId,
+            ]);
+
+            $result = $stmt->fetchAll();
+
+            if(!$result){
+                $this->logger->info("visitor does not exits");
+                return $response->withJson(0);
+            }
+            else{
+                if($result[0] == null){
+
+                    return $response->withJson(0);
+                }
+                else{
+                    return $response->withJson($result) ;
+                }
+            }
 
 
+
+        } catch (\PDOException $e){
+            $this->logger->info("Cannot get requested visitor Information from DB " . $e);
+            return $response->withJson(false) ;
+        }
     return $response->withJson($userId);
 });
 
